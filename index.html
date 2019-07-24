@@ -1,4 +1,4 @@
-<!doctype html>
+    <!doctype html>
 <html class="no-js">
 <head>
     <meta charset="utf-8">
@@ -12,28 +12,31 @@
 </head>
 <body ng-app="todoApp">
 
-        <div id="myDIV" class="header">
+    <div id="Title" class="header">
                 <h2>My To Do List</h2>
-                <input type="text" id="myInput" placeholder="Title...">
+                <input type="text" id="UserInput" placeholder="Title...">
                 <span onclick="newElement()" class="addBtn">Add</span>
               </div>
-              
-              <ul id="myUL">
+        
+    <!-- List alreldy filled to demonstrate capabilities of the app. -->
+    <!-- User can delete, and add items -->
+              <ul id="User's list">
+
                 <li>Hit the gym</li>
                 <li class="checked">Pay bills</li>
                 <li>Meet George</li>
                 <li>Buy eggs</li>
                 <li>Read a book</li>
                 <li>Organize office</li>
-              </ul>
-                    <h1>App Description</h1>
+        </ul>
+                <h1>App Description</h1>
 
                     <p>This is a Todo App built using <code>AngularJS</code> and <code>BootStrap Directive for
-                        AngularJS</code></p>
+                     AngularJS</code></p>
 
                     Instructions -
-                    <ul>
-                        <li>Double click on the todo text to edit it</li>
+                <ul>
+                    <li>Double click on the todo text to edit it</li>
                     </ul>
 
 
@@ -42,12 +45,17 @@
         </div>
     </div>
 </div>
-<div> <ul id ="myOrganizer">
+<div id="Subtitle" class="header">
+        <input type="text" id="UserInput" placeholder="Title...">
+        <span onclick="Myfuction()" class="addBtn">Add Catogory</span>
+      </div>
+<div> <ul id ="user's Organizer">
+
     <li class= " ">Monday</li>
-    <li class= " ">Teusday</li>
-    <li class= " ">Wendsday</li>
-    <li class= " ">Thursday</li>
-    <li class= " ">Friday</li>
+    <li>Tuesday</li>
+    <li class>Wednsday</li>
+    <li>Thursday</li>
+    <li>Friday</li>
   </ul>
        </div>
 
