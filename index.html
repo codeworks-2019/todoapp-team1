@@ -1,0 +1,85 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <title>Magic Mike</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="styles/bootstrap.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+</head>
+<body ng-app="todoApp">
+
+        <div id="myDIV" class="header">
+                <h2>My To Do List</h2>
+                <input type="text" id="myInput" placeholder="Title...">
+                <span onclick="newElement()" class="addBtn">Add</span>
+              </div>
+              
+              <ul id="myUL">
+                <li>Hit the gym</li>
+                <li class="checked">Pay bills</li>
+                <li>Meet George</li>
+                <li>Buy eggs</li>
+                <li>Read a book</li>
+                <li>Organize office</li>
+              </ul>
+                    <h1>App Description</h1>
+
+                    <p>This is a Todo App built using <code>AngularJS</code> and <code>BootStrap Directive for
+                        AngularJS</code></p>
+
+                    Instructions -
+                    <ul>
+                        <li>Double click on the todo text to edit it</li>
+                    </ul>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div> <ul id ="myOrganizer">
+    <li class= " ">Monday</li>
+    <li class= " ">Teusday</li>
+    <li class= " ">Wendsday</li>
+    <li class= " ">Thursday</li>
+    <li class= " ">Friday</li>
+  </ul>
+       </div>
+
+<!-- bower:js -->
+<script src="bower_components/es5-shim/es5-shim.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/json3/lib/json3.js"></script>
+<script src="bower_components/angular-animate/angular-animate.js"></script>
+<script src="bower_components/angular-cookies/angular-cookies.js"></script>
+<script src="bower_components/angular-resource/angular-resource.js"></script>
+<script src="bower_components/angular-route/angular-route.js"></script>
+<script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+<script src="bower_components/angular-touch/angular-touch.js"></script>
+<script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+
+<!-- build:js({.tmp,app}) scripts/scripts.js -->
+<script src="scripts/common/common.module.js"></script>
+
+<script src="scripts/common/directives/checkbox.js"></script>
+<script src="scripts/common/directives/editablelabel.js"></script>
+
+
+<script src="scripts/todo/todo.module.js"></script>
+<script src="scripts/todo/filters/todo.js"></script>
+<script src="scripts/todo/controllers/todo.js"></script>
+<script src="scripts/todo/services/todo.js"></script>
+
+
+<script src="scripts/app.js"></script>
+
+<!-- endbuild -->
+</body>
+</html>
